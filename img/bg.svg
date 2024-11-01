@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1048" height="100%" viewBox="0 0 1048 auto">
+  <defs>
+    <filter id="Path_36" x="-838" y="-387" width="1895" height="2023" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-bg">
+      <rect width="1048" height="1075"/>
+    </clipPath>
+  </defs>
+  <g id="bg" clip-path="url(#clip-bg)">
+    <g id="section-Hero">
+      <path id="Path_32" data-name="Path 32" d="M932.5,0C1447.505,0,1865,446.148,1865,996.5S1447.505,1993,932.5,1993,0,1546.852,0,996.5,417.495,0,932.5,0Z" transform="translate(-818 -365)" fill="none"/>
+      <path id="Path_33" data-name="Path 33" d="M932.5,0C1447.505,0,1865,446.148,1865,996.5S1447.505,1993,932.5,1993,0,1546.852,0,996.5,417.495,0,932.5,0Z" transform="translate(-828 -407)" fill="none"/>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_36)">
+        <path id="Path_36-2" data-name="Path 36" d="M932.5,0C1447.505,0,1865,446.148,1865,996.5S1447.505,1993,932.5,1993,0,1546.852,0,996.5,417.495,0,932.5,0Z" transform="translate(-828 -375)" fill="#4473de"/>
+      </g>
+    </g>
+  </g>
+</svg>
