@@ -11,27 +11,49 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"
     async></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/styles.css" />
   <script src="script/script.js" async></script>
 </head>
 
 <body>
-  <section class="section-hero section-hero_bg-img">
+  <nav class="position-fixed end-0">
+    <ul class="position-relative d-inline-flex py-3 me-lg-5 pe-lg-5 fw-light fs-6">
+      <li class="nav-item px-3">
+        <a href="#">start</a>
+      </li>
+      <li class="nav-item px-3">
+        <a href="#about">about</a>
+      </li>
+      <!-- <li class="px-3 fs-6">projects</li> -->
+      <li class="nav-item px-3">
+        <a href="mailto:s.bratuszewski@rgu.ac.uk">contact</a>
+      </li>
+      <div class="dot" id="dot"></div>
+    </ul>
+  </nav>
+  <section class="section-hero section-hero_bg-img" id="start">
     <!-- <nav></nav> -->
-    <div class="container h-100 py-0 py-lg-5 px-5 px-md-0">
+    <div class="container h-100 py-0 py-lg-5 px-3 px-md-0">
       <div class="row h-100 align-items-center">
         <div class="col-12 col-md-6">
-          <div class="p-width mx-auto text-white text-lg-dark">
-            <h1 class="text-capitalize mb-5">Full-Stack <br>Web developer</h1>
+          <div class="p-width mx-auto text-white">
+            <h1 class="text-capitalize mb-5">
+              Full-Stack <br />Web developer
+            </h1>
             <!-- <img class="img-fluid w-75 mb-4" src="img/hero-heading.webp" alt="heading"> -->
             <p class="mb-5">
               Hi, I am Stan Bratuszewski. A passionate Full-stack Web
               Developer based in Aberdeen, Scotland.
             </p>
-            <div class="mt-5 ms-1">
-              <a class="me-5 text-white"  href="https://www.linkedin.com/in/stan-bratuszewski/" target="_blank"><i class="icon fa-brands fa-linkedin fs-4"></i></a>
-              <a class="me-5 text-white" href="https://github.com/sbratuszewski" target="_blank"><i class="icon fa-brands fa-square-github fs-4"></i></a>
-              <a class="me-5 text-white"  href="mailto:s.bratuszewski@rgu.ac.uk"><i class="icon fa-solid fa-envelope fs-4"></i></a>
+            <div class="mt-5 mb-5 mb-md-0 ms-1">
+              <a class="me-5 text-white" href="https://www.linkedin.com/in/stan-bratuszewski/" target="_blank"><i
+                  class="icon fa-brands fa-linkedin fs-4"></i></a>
+              <a class="me-5 text-white" href="https://github.com/sbratuszewski" target="_blank"><i
+                  class="icon fa-brands fa-square-github fs-4"></i></a>
+              <a class="me-5 text-white" href="mailto:s.bratuszewski@rgu.ac.uk"><i
+                  class="icon fa-solid fa-envelope fs-4"></i></a>
             </div>
           </div>
         </div>
@@ -43,30 +65,45 @@
       </div>
     </div>
   </section>
-  <section class="py-0 py-lg-5 bg-light">
-    <div class="container py-3 py-lg-5 px-5 px-lg-0">
+  <section class="py-0 py-lg-5 bg-light" id="about">
+    <div class="container py-3 py-lg-5 px-3 px-lg-0">
       <div class="row align-items-center py-5">
         <div class="col-lg-6 order-last order-lg-first">
           <img class="img-fluid mx-auto py-5 my-5" src="img/laptop_code.png" alt="device" />
         </div>
         <div class="col-lg-6">
           <div class="p-width mx-auto">
-            <h1 class="text-capitalize fs-2 mb-4">Delivering end-to-end web development solutions</h1>
+            <h1 class="text-capitalize fs-2 mb-4">
+              Delivering end-to-end web development solutions
+            </h1>
             <p class="mb-5">
-              As a full-stack developer, I handle all aspects of web development from the front-end to the back-end. My skill set includes MERN stack, PHP and SQL. I am passionate about building high-quality, user-centric applications.
+              As a full-stack developer, I handle all aspects of web
+              development from the front-end to the back-end. My skill set
+              includes MERN stack, PHP and SQL. I am passionate about building
+              high-quality, user-centric applications.
             </p>
             <div class="pill-container d-flex justify-content-between flex-wrap text-white pe-4">
               <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">
                 JavaScript
               </p>
-              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">React</p>
-              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">Express</p>
-              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">MongoDB</p>
+              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">
+                React
+              </p>
+              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">
+                Express
+              </p>
+              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">
+                MongoDB
+              </p>
               <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">
                 Tailwind CSS
               </p>
-              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">PHP</p>
-              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">SQL</p>
+              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">
+                PHP
+              </p>
+              <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">
+                SQL
+              </p>
               <p class="py-2 px-3 my-2 mx-1 bg-blue rounded-pill shadow">
                 WordPress
               </p>
@@ -82,7 +119,9 @@
       </div>
     </div>
   </section>
-  <footer class="text-center fw-light py-5">Stan Bratuszewski &#169; <span id="date"></span></footer>
+  <footer class="text-center fw-light py-5">
+    Stan Bratuszewski &#169; <span id="date"></span>
+  </footer>
 </body>
 
 </html>
