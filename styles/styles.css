@@ -7,6 +7,11 @@
     margin: 0;
     padding: 0;
     text-decoration-style: none;
+    list-style: none;
+}
+
+a {
+    all: unset;
 }
 /* ********************* */
 body {
@@ -44,6 +49,11 @@ body {
     background: var(--bg-green);
 }
 /* ********************* */
+a:hover {
+    cursor: pointer;
+    color: var(--bg-green);
+    transition: .3s ease;
+}
 .section-hero {
     height: 100vh;
 }
@@ -67,6 +77,16 @@ body {
 
 .icon:hover {
     color: var(--bg-green);
+}
+
+.dot {
+    position: absolute;
+    display: none;
+    background: var(--bg-green);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: left 0.3s ease, top 0.3s ease;
 }
 
 @media only screen and (max-width: 1199px) {
