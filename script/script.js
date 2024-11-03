@@ -1,6 +1,9 @@
 //display current year in footer
 const currentYear = new Date().getUTCFullYear();
-$("#date").html(currentYear);
+const date = document.getElementById("date");
+const yearText = document.createTextNode(currentYear);
+
+date.appendChild(yearText);
 
 // handling change on navigation items when scroll
 const sections = document.querySelectorAll("section");
@@ -20,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  changeActiveLink(); // Run on initial load
+  changeActiveLink();
   window.addEventListener("scroll", changeActiveLink);
 });
